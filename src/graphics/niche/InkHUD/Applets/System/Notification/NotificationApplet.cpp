@@ -263,7 +263,7 @@ std::string InkHUD::NotificationApplet::getNotificationText(uint16_t widthAvaila
                 text += hexifyNodeNum(message->sender);
 
             text += ": ";
-            text += inkhud->persistence->latestMessage.textOf(message);
+            text += inkhud->persistence->latestMessage.textOf(msgIsBroadcast);
         }
     }
 
